@@ -1,5 +1,21 @@
-# Custom YOLO Object Detection Model
+# Candy Detection model using YOLO-2026 .
 
-This project demonstrates the training of a custom YOLO object detection model using Google Colab and the Ultralytics YOLO framework. The model was trained on annotated image datasets for real-time object detection tasks. The workflow includes dataset preprocessing, train-validation splitting, annotation handling, YAML configuration setup, and model training using pretrained YOLO weights. The project was developed using Python, OpenCV, PyTorch, and Ultralytics YOLO. The trained model generates optimized weights (`best.pt`) that can be used for real-time object detection, camera-based inference, and computer vision applications. This project helped in understanding object detection pipelines, dataset management, annotation workflows, and practical deep learning implementation using YOLO. 
+Custom YOLO Object Detection Training
 
+This project demonstrates the implementation and customization of a YOLO-based object detection pipeline using Google Colab and Ultralytics YOLO. The project was adapted from an existing training workflow and updated with newer YOLO model configurations for experimentation and learning purposes. The workflow includes dataset preprocessing, annotation handling, train-validation splitting, YAML configuration, and model training for real-time object detection tasks.
 
+Technologies used:
+
+Python
+Ultralytics YOLO
+OpenCV
+PyTorch
+Google Colab
+
+This project helped in understanding:
+
+object detection workflows
+dataset preprocessing
+annotation handling
+YOLO training pipelines
+computer vision fundamentals
