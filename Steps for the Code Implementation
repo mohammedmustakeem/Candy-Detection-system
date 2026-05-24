@@ -58,3 +58,13 @@ create_data_yaml(path_to_classes_txt, path_to_data_yaml)
 
 print('\nFile contents:\n')
 !cat /content/data.yaml
+STEP7=Run Training.
+!yolo detect train data=/content/data.yaml model=yolo26s.pt epochs=100 imgsz=640
+STEP8=Test Model
+!yolo detect predict model=runs/detect/train/weights/best.pt source=data/validation/images save=True
+STEP9=To test 10 images.
+import glob
+from IPython.display import Image, display
+for image_path in glob.glob(f'/content/runs/detect/predict/*.jpg')[:10]:
+  display(Image(filename=image_path, height=400))
+  print('\n')
